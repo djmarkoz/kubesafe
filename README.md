@@ -38,7 +38,7 @@ Available Commands:
   verify      Verify if the current cluster is the expected cluster and optionally run a command
 ```
 
-## Aliases
+## Useful aliases
 
 ```bash
 alias ks='kubesafe'
@@ -47,6 +47,8 @@ alias ksu='kubesafe unset'
 alias ksg='kubesafe get'
 alias kse='kubesafe explain'
 alias ksv='kubesafe verify'
+
+# wrap 'kubectl' and 'helm' commands with 'kubesafe'
 alias kubectl='kubesafe verify -- \kubectl'
 alias helm='kubesafe verify -- \helm'
 ```
